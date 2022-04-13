@@ -18,6 +18,7 @@ Return the objects containing counts of unique values using (value_counts()).
 Find the pairwise correlation of all columns in the dataframe.corr() and save the cleaned data to the file
 
 ## CODE:
+```
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -56,6 +57,7 @@ pd.crosstab(df["Branch"],df["Product line"])
 pd.crosstab(df["Product line"],df["City"])
 df.corr()
 sns.heatmap(df.corr(),annot=True)
+```
 ## output
 ![Output](.//outimg1.png)
 ![Output](.//outimg2.png)
